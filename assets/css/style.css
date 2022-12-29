@@ -308,3 +308,51 @@ section {
     transform: scale(1.04);
     cursor: pointer;
 }
+
+/* ==== Newsletter section ==== */
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.news-text h2 {
+    font-size: 48px;
+    color: #221314;
+}
+
+.news-text p {
+    font-size: 17px;
+    color: #5a7184;
+    line-height: 30px;
+}
+
+.newsletter form {
+    width: 450px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 150px 20px 30px;
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.newsletter form input:last-child {
+    display: inline-block;
+    position: absolute;
+    padding: 14px 30px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 15px;
+    color: var(--bg-color);
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
