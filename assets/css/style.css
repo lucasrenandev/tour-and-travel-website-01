@@ -260,3 +260,51 @@ section {
     filter: brightness(100%) hue-rotate(45deg);
     transform: scale(1.04);
 }
+
+/* ==== Destination section ==== */
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.destination-box {
+    position: relative;
+}
+
+.destination-box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    filter: brightness(80%);
+    transition: all 0.3s cubic-bezier(.495, 0.5, .55, .95);
+    will-change: filter;
+}
+
+.destination-box h5 {
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--bg-color);
+}
+
+.destination-box p {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--bg-color);
+    text-transform: uppercase;
+}
+
+.destination-box img:hover {
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+    cursor: pointer;
+}
