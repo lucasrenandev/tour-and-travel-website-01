@@ -25,6 +25,7 @@ html {
 
 body {
     background-color: var(--bg-color);
+    position: relative; 
 }
 
 /* ==== Header ==== */
@@ -355,4 +356,113 @@ section {
     top: 6px;
     right: 6px;
     cursor: pointer;
+}
+
+/* ==== Contact footer ==== */
+footer {
+    background-color: var(--main-color);
+    padding: 80px 18%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.footer-content h5 {
+    font-size: 21px;
+    color: var(--bg-color);
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.footer-content h5::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: var(--bg-color);
+    bottom: 5px;
+    left: 0;
+}
+
+.list {
+    margin-top: 1rem;
+}
+
+.list li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.list li a {
+    display: block;
+    font-size: 17px;
+    color: #ffffffbf;
+    transition: all .40s ease;
+}
+
+.list li a:hover {
+    transform: translateX(10px);
+    color: var(--bg-color);
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--bg-color);
+    border-radius: 15px;    
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.40s ease;
+}
+
+.social li a i {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.social li a:hover {
+    transform: scale(1.06);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.copyright p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--bg-color);
+    letter-spacing: 2px;
+}
+
+/* ==== Scroll arrow ==== */
+.scroll-arrow {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-color);
+    bottom: 80px;
+    right: 50px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.scroll-arrow i {
+    font-size: 30px;
+    color: var(--bg-color);
 }
