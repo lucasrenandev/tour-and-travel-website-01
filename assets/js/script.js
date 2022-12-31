@@ -28,6 +28,6 @@ function hiddenScrollArrow() {
 window.addEventListener("scroll", function() {
     hiddenScrollArrow()
     navBar.classList.remove("active")
-    menuIcon.classList.remove("active")
+    menuIcon.classList.remove("bx-x")
 })
 hiddenScrollArrow()   
