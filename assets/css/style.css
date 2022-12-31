@@ -314,6 +314,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -366,6 +367,7 @@ footer {
 .footer-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
 }
 
 .footer-content h5 {
