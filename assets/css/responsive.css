@@ -84,16 +84,15 @@
 
 @media (max-width: 417px) {
     :root {
-        --big-font: 3.2rem;
-        --h2-font: 2.3rem;
+        --big-font: 3.3rem;
     }
 
     .home-text p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .home-button {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .destination-container {
